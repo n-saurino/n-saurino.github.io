@@ -1,37 +1,39 @@
 const githubUsername = "n-saurino"; // Change to your GitHub username
 const topic = "data-structures"; // Change to the topic you used
-const container = document.querySelector(".data-structures-list");
 const carousel = document.querySelector(".data-structures-carousel");
 
 async function fetchRepos() {
-    const response = await fetch(`https://api.github.com/users/${githubUsername}/repos`,
-        {
-            headers: {
-                "Accept": "application/vnd.github.mercy-preview+json" // Enables topics in API response
-            }
+    const response = await fetch(`https://api.github.com/users/${githubUsername}/repos`, {
+        headers: {
+            "Accept": "application/vnd.github.mercy-preview+json" // Enables topics in API response
         }
-    );
+    });
+
     const repos = await response.json();
+    console.log("Fetched Repos:", repos); // Debugging step
 
     const filteredRepos = repos.filter(repo => repo.topics && repo.topics.includes(topic));
+    console.log("Filtered Repos:", filteredRepos); // Debugging step
 
     if (filteredRepos.length === 0) {
-        container.innerHTML = "<p>No repositories found with the selected topic.</p>";
+        carousel.innerHTML = "<p>No repositories found with the selected topic.</p>";
         return;
     }
 
     filteredRepos.forEach(repo => {
         const repoCard = document.createElement("div");
         repoCard.classList.add("data-structure-card");
+
+        // Create GitHub Repo Card
         repoCard.innerHTML = `
-            <h3>${repo.name.replace(/-/g, " ")}</h3>
-            <p>${repo.description || "No description available"}</p>
-            <a href="${repo.html_url}" target="_blank">View on GitHub</a>
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=${githubUsername}&repo=${repo.name}" alt="${repo.name}" />
         `;
-        container.appendChild(repoCard);
+
+        carousel.appendChild(repoCard);
     });
 }
 
+// Call the function
 fetchRepos();
 
 // Call function after page load
