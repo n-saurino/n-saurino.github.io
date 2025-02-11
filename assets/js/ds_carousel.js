@@ -32,6 +32,8 @@ async function fetchRepos() {
     });
 }
 
+fetchRepos();
+
 // Call function after page load
 document.addEventListener("DOMContentLoaded", fetchRepos);
 
