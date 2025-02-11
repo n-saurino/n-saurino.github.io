@@ -4,7 +4,13 @@ const container = document.querySelector(".data-structures-list");
 const carousel = document.querySelector(".data-structures-carousel");
 
 async function fetchRepos() {
-    const response = await fetch(`https://api.github.com/users/${githubUsername}/repos`);
+    const response = await fetch(`https://api.github.com/users/${githubUsername}/repos`,
+        {
+            headers: {
+                "Accept": "application/vnd.github.mercy-preview+json" // Enables topics in API response
+            }
+        }
+    );
     const repos = await response.json();
 
     const filteredRepos = repos.filter(repo => repo.topics && repo.topics.includes(topic));
