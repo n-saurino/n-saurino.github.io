@@ -33,31 +33,36 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Past Experience</h1>
+							<h1 class="major">Recent Activity</h1>
 							<!--<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 							-->
-							<!-- Goldman Sachs -->
-							<h2>Goldman Sachs – Portfolio Management Associate (2019 – 2022)</h2>
-							<ul>
-								<li>Built MBD Real Estate’s portfolio model using Excel, Alteryx, and Python to analyze investment cash flows and project PnL at multiple levels.</li>
-								<li>Modeled investment business plans to determine quarterly valuations and the performance of a $30B portfolio across multiple asset classes.</li>
-								<li>Worked closely with quantitative analysts and developers to improve financial modeling and automation processes.</li>
-							</ul>
-	
-							<!-- The Gelber Group -->
-							<h2>The Gelber Group – Trader (2017 – 2019)</h2>
-							<ul>
-								<li>Executed discretionary, relative-value trading strategies focused on US fixed income, the German sovereign debt curve, and US equity indices through CME and EUREX exchanges.</li>
-								<li>Developed Python scripts to analyze historical tick data and identify patterns in liquidity for systematic trading strategy development.</li>
-								<li>Gained hands-on experience in real-time trading environments and high-frequency execution strategies.</li>
-							</ul>
-	
-							<!-- NYU Graduate Assistant -->
-							<h2>NYU – Graduate Assistant, Operating Systems (2022)</h2>
-							<ul>
-								<li>Guided students on core operating system principles including process scheduling, virtual memory, file systems, and kernel development.</li>
-								<li>Provided mentorship and technical support on C programming and Linux-based system architecture.</li>
-							</ul>
+							<!-- Heatmaps -->
+							<div class="heatmaps">
+								<div class="github">
+									<h3>GitHub Contributions</h3>
+									<div id="github-calendar"></div>
+								</div>
+								<div class="leetcode">
+									<h3>LeetCode Contributions</h3>
+									<img src="https://leetcode-stats-six.vercel.app/api?username=nigelsaurino&theme=dark&ext=heatmap" alt="LeetCode Stats" />
+								</div>
+							</div>
+							
+							<style>
+								.heatmaps {
+									display: flex;
+									justify-content: space-between;
+									flex-wrap: wrap;
+								}
+								.github, .leetcode {
+									width: 48%;
+								}
+							</style>
+							
+							<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+							<script>
+								GitHubCalendar("#github-calendar", "n-saurino", { responsive: true });
+							</script>
 						</div>
 					</section>
 
