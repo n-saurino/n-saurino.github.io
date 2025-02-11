@@ -1838,13 +1838,13 @@ input, select, textarea {
 		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.6em;
+		font-size: 1.0em;
 		font-weight: bold;
-		height: calc(4.75em + 2px);
-		letter-spacing: 0.25em;
-		line-height: 4.75em;
+		height: calc(5.5em + 2px);
+		letter-spacing: 0.15em;
+		line-height: 5.5em;
 		outline: 0;
-		padding: 0 3.75em;
+		padding: 0 4.75em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
