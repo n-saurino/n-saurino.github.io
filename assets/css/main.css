@@ -86,17 +86,42 @@
 
 .data-structures-carousel {
     display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow: hidden; /* Prevent scroll wheel scrolling */
     scroll-snap-type: x mandatory;
     gap: 10px;
     padding: 10px;
     white-space: nowrap;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .data-structure-card {
     flex: 0 0 auto;
     scroll-snap-align: start;
     text-align: center;
+}
+
+/* Optional: Style for Carousel Container */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Style for Navigation Buttons */
+.carousel-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-button:hover {
+    background-color: #333;
 }
 
 html, body, div, span, applet, object,
