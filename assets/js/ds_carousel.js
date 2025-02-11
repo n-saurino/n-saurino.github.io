@@ -1,5 +1,5 @@
 const githubUsername = "n-saurino"; // Change to your GitHub username
-const topic = "data-structure"; // Change to the topic you used
+const topic = "data-structures"; // Change to the topic you used
 const container = document.querySelector(".data-structures-list");
 const carousel = document.querySelector(".data-structures-carousel");
 
