@@ -37,32 +37,40 @@
 							<!--<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 							-->
 							<!-- Heatmaps -->
-							<div class="heatmaps">
-								<div class="github">
-									<h3>GitHub Contributions</h3>
-									<div id="github-calendar"></div>
+								<div class="heatmaps">
+									<div class="github">
+										<h3>GitHub Contributions</h3>
+										<div id="github-calendar"></div>
+									</div>
+									<div class="leetcode">
+										<h3>LeetCode Contributions</h3>
+										<img src="https://leetcode-stats-six.vercel.app/api?username=nigelsaurino" alt="LeetCode Stats" />
+									</div>
 								</div>
-								<div class="leetcode">
-									<h3>LeetCode Contributions</h3>
-									<img src="https://leetcode-stats-six.vercel.app/api?username=nigelsaurino&theme=dark&ext=heatmap" alt="LeetCode Stats" />
-								</div>
-							</div>
-							
-							<style>
-								.heatmaps {
-									display: flex;
-									justify-content: space-between;
-									flex-wrap: wrap;
-								}
-								.github, .leetcode {
-									width: 48%;
-								}
-							</style>
-							
-							<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-							<script>
-								GitHubCalendar("#github-calendar", "n-saurino", { responsive: true });
-							</script>
+
+								<!-- CSS for layout -->
+								<style>
+									.heatmaps {
+										display: flex;
+										justify-content: space-between;
+										flex-wrap: wrap;
+										gap: 20px;
+									}
+
+									.github, .leetcode {
+										flex: 1;
+										min-width: 300px;
+									}
+								</style>
+
+								<!-- GitHub Contributions Calendar -->
+								<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+								<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+								<script>
+									document.addEventListener("DOMContentLoaded", function() {
+										GitHubCalendar("#github-calendar", "n-saurino", { responsive: true });
+									});
+								</script>	
 						</div>
 					</section>
 
