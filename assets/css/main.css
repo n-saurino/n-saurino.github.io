@@ -6,6 +6,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/*
 .carousel-container {
     display: flex;
     align-items: center;
@@ -80,6 +81,22 @@
 
 .carousel-button:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+*/
+
+.data-structures-carousel {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.data-structure-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    text-align: center;
 }
 
 html, body, div, span, applet, object,
