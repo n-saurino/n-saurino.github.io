@@ -20,10 +20,10 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Intro</a></li>
-							<li><a href="#one">Projects</a></li>
-							<li><a href="#two">Education</a></li>
-							<li><a href="#three">Cache</a></li>
-							<li><a href="#four">Past Experiences</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="education.html">Education</a></li>
+							<li><a href="cache.html">Cache</a></li>
+							<li><a href="experiences.html">Past Experiences</a></li>
 							<li><a href="#five">Contact</a></li>
 						</ul>
 					</nav>
@@ -36,19 +36,72 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Nigel Saurino</h1>
-							<p>Low-latency coder. High-frequency learner.</p>
-							<!-- <p>Engineer's brain, trader’s heart, and a debugger’s patience.</p> -->
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
+							<div class="split-container">
+								<!-- Left Side: Name and Tagline -->
+								<div class="intro-content">
+									<h1>Nigel Saurino</h1>
+									<p>Low-latency coder. High-frequency learner.</p>
+									<ul class="actions">
+										<li><a href="#one" class="button scrolly">Learn more</a></li>
+									</ul>
+								</div>
+
+								<!-- Right Side: About Me Section -->
+								<div class="about-me">
+									<img src="images/nigel_headshot_large.jpg" alt="Nigel Saurino" class="headshot">
+									<p>
+										I spent five years in public and private markets, where I saw firsthand how technology drives decision-making. At Goldman Sachs and the Gelber Group, I worked as a portfolio manager and trader, relying on tech for key strategies. To deepen my expertise, I earned a Master’s in Computer Science from NYU (4.0 GPA). Today, I’m focused on building trading systems with C++.
+									</p>
+								</div>
+							</div>
 						</div>
 					</section>
+
+					<!-- CSS Styles -->
+					<style>
+						.split-container {
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							justify-content: space-between;
+						}
+
+						.intro-content {
+							flex: 1;
+							padding-right: 50px;
+						}
+
+						.about-me {
+							flex: 1;
+							text-align: center;
+						}
+
+						.headshot {
+							width: 150px;
+							height: 150px;
+							border-radius: 50%;
+							object-fit: cover;
+							margin-bottom: 15px;
+							border: 3px solid #fff;
+							box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+						}
+
+						@media (max-width: 768px) {
+							.split-container {
+								flex-direction: column;
+								text-align: center;
+							}
+							
+							.intro-content {
+								padding-right: 0;
+							}
+						}
+					</style>
 
 				<!-- One -->
 				<section id="one" class="wrapper style2 spotlights">
 					<section>
-						<a href="#" class="image"><img src="images/github-mark-white.png" alt="" data-position="center center" /></a>
+						<a href="#" class="image"><img src="images/github-logo-white-background.jpg" alt="" data-position="center center" /></a>
 						<div class="content">
 							<div class="inner">
 								<h2>Projects</h2>
@@ -80,7 +133,7 @@
 				<!-- Two -->
 					<section id="three" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/computer_chip.png" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/computer_chip_white_bg.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Cache</h2>
