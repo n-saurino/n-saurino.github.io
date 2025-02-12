@@ -136,9 +136,9 @@ input, select, textarea {
 		}
 
 /* Type */
-
+	/* CHANGED TEXT COLOR TO LIGHTER GREY BELOW */
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
+		color: rgba(255, 255, 255, 0.75);
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
