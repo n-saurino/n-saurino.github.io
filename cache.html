@@ -11,6 +11,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Swiper's CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+		<!-- Swiper's JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>	
 	</head>
 	<body class="is-preload">
 
@@ -39,62 +43,92 @@
 							<!-- Data Structure Carousel-->
 							<section id="data-structures" class="wrapper style2">
 								<div class="inner">
-									<h2>Data Structures Implementations</h2>
+									<h2>Data Structure Implementations</h2>
 									<p>A collection of data structures implemented in C++ to deepen my understanding of algorithms and performance optimizations.</p>
 							
-									<div class="carousel-container">
-										<button class="prev">&#10094;</button>
-										<div class="data-structures-carousel">
-											<!--<div class="data-structures-list"></div> -->
+									<div class="swiper mySwiper">
+										<div class="swiper-wrapper data-structures-carousel">
+											<!-- GitHub repositories will be dynamically added here -->
 										</div>
-										<button class="next">&#10095;</button>
+									
+										<!-- Navigation Buttons -->
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
 									</div>
 								</div>
 							</section>
-							<!-- Contribution Log-->
-							<div class="github">
-								<h2>GitHub Contributions</h2>
-								<p align="center"><a>
-									<a href="https://github.com/n-saurino">
-									  <img src="https://github-readme-streak-stats.herokuapp.com/?user=n-saurino&amp;theme=radical&amp;border=7F3FBF&amp;background=0D1117" alt="Nigel's GitHub streak" />
-									</a>
-									<a href="https://github.com/n-saurino"><img alt="Nigel's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=n-saurino&amp;langs_count=8&amp;layout=compact&amp;theme=react&amp;border_color=7F3FBF&amp;bg_color=0D1117&amp;title_color=F85D7F&amp;icon_color=F8D866" height="192px" width="49.5%" /></a>
-								</a></p>
-								  
-								  <p align="center">
-									<a href="https://github.com/n-saurino">
-									  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=n-saurino&amp;theme=radical" alt="Nigel's GitHub Contributions" />
-									</a>
-								  </p>
-							</div>
-							<!-- UNCOMMENT WHEN YOU'RE DOING MORE OPEN-SOURCE WORK
-							  <p><a> 
-								  <a href="https://github.com/n-saurino"><img alt="Nigel's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api?username=n-saurino&amp;show_icons=true&amp;count_private=true&amp;theme=react&amp;border_color=7F3FBF&amp;bg_color=0D1117&amp;title_color=F85D7F&amp;icon_color=F8D866" height="192px" width="49.5%" /></a>
-								<a href="https://github.com/n-saurino"><img alt="Nigel's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=n-saurino&amp;langs_count=8&amp;layout=compact&amp;theme=react&amp;border_color=7F3FBF&amp;bg_color=0D1117&amp;title_color=F85D7F&amp;icon_color=F8D866" height="192px" width="49.5%" /></a>
-								<br />
-							  </a></p>
-							  
-							  
-							  <p><img src="https://github-readme-activity-graph.vercel.app/graph?username=n-saurino&amp;custom_title=Nigel%20Saurinos%20GitHub%20Activity%20Graph&amp;bg_color=0D1117&amp;color=7F3FBF&amp;line=7F3FBF&amp;point=7F3FBF&amp;area_color=FFFFFF&amp;title_color=FFFFFF&amp;area=true" alt="Nigel's Graph" /></p>
-							-->
-							<div class="leetcode">
-								<h2>LeetCode Contributions</h2>
-								<img src="https://leetcard.jacoblin.cool/nigelsaurino?theme=dark&ext=heatmap" alt="LeetCode Stats" />
-							</div>
-							
-							<style>
-								.leetcode {
-									text-align: left; /* Centers the text */
-								}
-							
-								.leetcode img {
-									display: block;
-									margin: 0 auto; /* Centers the image */
-								}
-							</style>
-						</div>
-					</section>
+							<!-- Contribution Section -->
+								<section id="contributions" class="wrapper">
+									<div class="inner">
+										<h2 class="major">Contributions</h2>
+										<p>My recent coding contributions across GitHub and LeetCode.</p>
 
+										<div class="row">
+											<!-- GitHub Contributions -->
+											<div class="col-6 col-12-medium">
+												<section class="box">
+													<h3>GitHub Contributions</h3>
+													<p align="center">
+														<a href="https://github.com/n-saurino">
+															<img src="https://github-readme-streak-stats.herokuapp.com/?user=n-saurino&theme=radical&border=7F3FBF&background=0D1117" alt="GitHub Streak" />
+														</a>
+													</p>
+													<p align="center">
+														<a href="https://github.com/n-saurino">
+															<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=n-saurino&theme=radical&border=7F3FBF" alt="GitHub Contributions" />
+														</a>
+													</p>
+													<p align="center">
+														<a href="https://github.com/n-saurino">
+															<img alt="Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=n-saurino&langs_count=8&layout=compact&theme=react&border_color=7F3FBF&bg_color=0D1117&title_color=F85D7F&icon_color=F8D866" height="192px" width="100%" />
+														</a>
+													</p>
+												</section>
+											</div>
+
+											<!-- LeetCode Contributions -->
+											<div class="col-6 col-12-medium">
+												<section class="box">
+													<h3>LeetCode Contributions</h3>
+													<p align="center">
+														<img src="https://leetcard.jacoblin.cool/nigelsaurino?theme=dark&ext=heatmap" alt="LeetCode Stats" />
+													</p>
+												</section>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<!-- CSS Styling -->
+								<style>
+									/* Ensure consistent spacing */
+									.box {
+										padding: 20px;
+										text-align: center;
+										background: rgba(0, 0, 0, 0.1);
+										border-radius: 10px;
+									}
+
+									/* Ensure images fit properly */
+									.box img {
+										max-width: 100%;
+										height: auto;
+										display: block;
+										margin: 10px auto;
+										border-radius: 5px;
+									}
+
+									/* Responsive Layout */
+									@media (max-width: 768px) {
+										.row {
+											flex-direction: column;
+										}
+
+										.col-6 {
+											width: 100%;
+										}
+									}
+								</style>
 			</div>
 
 		<!-- Footer -->

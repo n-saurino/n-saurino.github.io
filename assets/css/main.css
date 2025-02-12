@@ -6,122 +6,27 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/*
-.carousel-container {
+.swiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.swiper-wrapper {
     display: flex;
-    align-items: center;
+}
+
+.swiper-slide {
+    display: flex;
+	width: auto;
     justify-content: center;
-    position: relative;
-    max-width: 100%;
-}
-
-.data-structures-carousel {
-    display: flex;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    width: 80%;
-    max-width: 800px;
-    white-space: nowrap;
-}
-
-.data-structures-list {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-}
-
-.data-structure-card {
-    min-width: 250px;
-    max-width: 250px;
-    padding: 15px;
-    background: #1e1e1e;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    align-items: center;
+    min-width: 300px;
+    max-width: 300px;
     flex-shrink: 0;
 }
 
-.data-structure-card h3 {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.data-structure-card a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    background: #ff6600;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.carousel-button {
-    background-color: rgba(0, 0, 0, 0.6);
+.swiper-button-next, .swiper-button-prev {
     color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    border-radius: 50%;
-}
-
-.carousel-button.left {
-    left: 10px;
-}
-
-.carousel-button.right {
-    right: 10px;
-}
-
-.carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-*/
-
-.data-structures-carousel {
-    display: flex;
-    overflow: hidden; /* Prevent scroll wheel scrolling */
-    scroll-snap-type: x mandatory;
-    gap: 10px;
-    padding: 10px;
-    white-space: nowrap;
-    justify-content: flex-start;
-    width: 100%;
-}
-
-.data-structure-card {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    text-align: center;
-}
-
-/* Optional: Style for Carousel Container */
-.carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-/* Style for Navigation Buttons */
-.carousel-button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.carousel-button:hover {
-    background-color: #333;
 }
 
 html, body, div, span, applet, object,
