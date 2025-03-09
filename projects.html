@@ -1,12 +1,16 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <title>Portfolio Projects</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
+
 <body class="is-preload">
 
     <!-- Header -->
@@ -33,30 +37,60 @@
                 <!-- Trading Systems and C++ -->
                 <h2>Trading Systems and C++</h2>
                 <div class="box">
-                    <h3>Real-Time Order Matching Engine</h3>
-                    <p>Referencing the textbook "Building Low Latency Applications with 
-						C++" by Sourav Ghosh. Actively building a high-speed order 
-						matching engine using lock-free data structures and 
-						memory pools.</p>
+                    <h3>Low-latency FIX Engine</h3>
+                    <p>Building a high-performance FIX client in C++ as a hands-on way to dive deep into the FIX
+                        protocol and low-latency application development. This project is all about optimizing network
+                        communication, execution speed, and memory management—key areas for building fast and efficient
+                        trading systems.</p>
                     <h4>Project Focus:</h4>
                     <ul>
-                        <li>High-Performance Order Matching – Implementing a fast, lock-free order matching engine using memory pools and efficient data structures.</li>
-                        <li>Optimized Network Communication – Designing an asynchronous, event-driven architecture with Boost.Asio to handle real-time market data and order flow.</li>
-                        <li>Low-Latency Processing – Leveraged C++20, cache-friendly algorithms, and multi-threading to minimize execution time and maximize throughput.</li>
+                        <li>Fix Protocol Mastery – Parsing, validating, and generating FIX messages while making sure
+                            everything runs smoothly and adheres to industry standards.</li>
+                        <li>Optimized Network Communication – Using raw POSIX sockets, TCP/UDP tuning, and asynchronous
+                            I/O to keep latency as low as possible while handling high-frequency data.
+                        <li>Efficient Memory Management – Implementing memory pools and lock-free data structures to
+                            reduce allocation overhead and maximize performance.</li>
+                        <li>Low-Latency Execution - Leveraging modern C++20 features, cache-friendly programming, and
+                            multi-threading to ensure fast and scalable message processing.</li>
                     </ul>
                     <ul class="actions">
-                        <li><a href="https://github.com/n-saurino/low-latency-trading-system" class="button primary">View Code</a></li>
+                        <li><a href="https://github.com/n-saurino/fix_engine" class="button primary">View Code</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h3>Real-Time Order Matching Engine</h3>
+                    <p>Referencing the textbook "Building Low Latency Applications with
+                        C++" by Sourav Ghosh. Actively building a high-speed order
+                        matching engine using lock-free data structures and
+                        memory pools.</p>
+                    <h4>Project Focus:</h4>
+                    <ul>
+                        <li>High-Performance Order Matching – Implementing a fast, lock-free order matching engine using
+                            memory pools and efficient data structures.</li>
+                        <li>Optimized Network Communication – Designing an asynchronous, event-driven architecture with
+                            Boost.Asio to handle real-time market data and order flow.</li>
+                        <li>Low-Latency Processing – Leveraged C++20, cache-friendly algorithms, and multi-threading to
+                            minimize execution time and maximize throughput.</li>
+                    </ul>
+                    <ul class="actions">
+                        <li><a href="https://github.com/n-saurino/low-latency-trading-system"
+                                class="button primary">View Code</a></li>
                     </ul>
                 </div>
 
                 <div class="box">
                     <h3>XV6 Strace Implementation</h3>
-                    <p>A linux-like strace implementation for the xv6 operating system in order to track system calls executed by user programs.</p>
+                    <p>A linux-like strace implementation for the xv6 operating system in order to track system calls
+                        executed by user programs.</p>
                     <h4>Project Focus:</h4>
                     <ul>
-                        <li>User-Controlled Debugging – Traced processes using command-line flags, enhancing debugging capabilities within xv6.</li>
-                        <li>System Call Tracing – Implemented a new strace system call to log system calls made by user programs in xv6.</li>
-                        <li>Kernel Modifications – Modified syscall.c and sysproc.c to track and print system calls dynamically based on process-specific settings.</li>
+                        <li>User-Controlled Debugging – Traced processes using command-line flags, enhancing debugging
+                            capabilities within xv6.</li>
+                        <li>System Call Tracing – Implemented a new strace system call to log system calls made by user
+                            programs in xv6.</li>
+                        <li>Kernel Modifications – Modified syscall.c and sysproc.c to track and print system calls
+                            dynamically based on process-specific settings.</li>
                     </ul>
                     <ul class="actions">
                         <li><a href="https://github.com/n-saurino/strace_xv6" class="button primary">View Code</a></li>
@@ -67,10 +101,10 @@
                 <h2>Cloud Computing and Distributed Systems</h2>
                 <div class="box">
                     <h3>AWS-Hosted Chatbot</h3>
-                    <p>A chatbot built leveraging lambdas, DynamoDB, S3 and 
-						ElasticSearch that provides restaurant recommendations by 
-						scraping Yelp, storing restaurant information, and indexing the 
-						data for fast retrieval.</p>
+                    <p>A chatbot built leveraging lambdas, DynamoDB, S3 and
+                        ElasticSearch that provides restaurant recommendations by
+                        scraping Yelp, storing restaurant information, and indexing the
+                        data for fast retrieval.</p>
                     <h4>Project Focus:</h4>
                     <ul>
                         <li>Amazon DynamoDB for storing restaurant data</li>
@@ -86,10 +120,10 @@
                 <h2>Data Engineering & Management</h2>
                 <div class="box">
                     <h3>NYU Housing Analysis</h3>
-					<p>Identify the preferable place in NYC for students to live in 
-						terms of crime and transportation using historic dataset 
-						provided by NYC via their open data initiative and daily rental 
-						price obtained from Airbnb.</p>
+                    <p>Identify the preferable place in NYC for students to live in
+                        terms of crime and transportation using historic dataset
+                        provided by NYC via their open data initiative and daily rental
+                        price obtained from Airbnb.</p>
                     <h4>Project Focus:</h4>
                     <ul>
                         <li>PySpark for distributed data processing</li>
@@ -97,16 +131,17 @@
                         <li>GeoPandas for interactive mapping</li>
                     </ul>
                     <ul class="actions">
-                        <li><a href="https://github.com/n-saurino/big-data-project" class="button primary">View Code</a></li>
+                        <li><a href="https://github.com/n-saurino/big-data-project" class="button primary">View Code</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="box">
                     <h3>Music Social Media Application</h3>
-                    <p>Built a social media application for music fans in React and 
-						Node.js. The application allows users to login, connect with 
-						friends, rate and review songs, and 
-						follow artists for new releases.</p>
+                    <p>Built a social media application for music fans in React and
+                        Node.js. The application allows users to login, connect with
+                        friends, rate and review songs, and
+                        follow artists for new releases.</p>
                     <h4>Project Focus:</h4>
                     <ul>
                         <li>React for UI</li>
@@ -114,7 +149,8 @@
                         <li>MySQL for database management</li>
                     </ul>
                     <ul class="actions">
-                        <li><a href="https://github.com/nyu-cs6083/CS-GY-6083-FatEar" class="button primary">View Code</a></li>
+                        <li><a href="https://github.com/nyu-cs6083/CS-GY-6083-FatEar" class="button primary">View
+                                Code</a></li>
                     </ul>
                 </div>
 
@@ -122,15 +158,15 @@
                 <h2>Miscellaneous</h2>
                 <div class="box">
                     <h3>ChatGPT Fitness Trainer</h3>
-                    <p>Implemented a personalized fitness 
-						trainer app in Java. The application offers a comprehensive, 
-						data-driven solution that caters to individual fitness goals 
-						by providing tailored 
-						diet and exercise recommendations. Utilizing the OpenAI API, the
-						 app aims to simulate the expertise of a fitness coach to guide 
-						 users based on various personal metrics like weight, height, 
-						 age, and specific fitness objectives such as weight loss, 
-						 weight gain, or muscle building.</p>
+                    <p>Implemented a personalized fitness
+                        trainer app in Java. The application offers a comprehensive,
+                        data-driven solution that caters to individual fitness goals
+                        by providing tailored
+                        diet and exercise recommendations. Utilizing the OpenAI API, the
+                        app aims to simulate the expertise of a fitness coach to guide
+                        users based on various personal metrics like weight, height,
+                        age, and specific fitness objectives such as weight loss,
+                        weight gain, or muscle building.</p>
                     <h4>Project Focus:</h4>
                     <ul>
                         <li>Database Management</li>
@@ -138,7 +174,8 @@
                         <li>Graphical User Interface</li>
                     </ul>
                     <ul class="actions">
-                        <li><a href="https://github.com/somyagupta-2910/TailorFit" class="button primary">View Code</a></li>
+                        <li><a href="https://github.com/somyagupta-2910/TailorFit" class="button primary">View Code</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -150,7 +187,8 @@
     <footer id="footer" class="wrapper alt">
         <div class="inner">
             <ul class="menu">
-                <li>&copy; Nigel Saurino. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                <li>&copy; Nigel Saurino. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
             </ul>
         </div>
     </footer>
@@ -165,4 +203,5 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
